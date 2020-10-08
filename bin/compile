@@ -22,7 +22,7 @@ BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
 workspace = process.env.workspace
 echo -e -n "\033[1;36m";
-echo workspace;
+echo "$workspace";
 echo -e -n "\033[0m";
 
 
