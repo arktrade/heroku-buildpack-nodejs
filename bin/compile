@@ -20,9 +20,13 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
+
+
 workspace = process.env.workspace
 echo -e -n "\033[1;36m";
-echo "$workspace";
+echo "$BUILD_DIR";
+echo "$CACHE_DIR";
+echo "$ENV_DIR";
 echo -e -n "\033[0m";
 
 
