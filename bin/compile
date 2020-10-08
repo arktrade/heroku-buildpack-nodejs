@@ -29,7 +29,7 @@ echo "$ENV_DIR";
 
 
 if [[ -z "${workspace}" ]]; then
-  echo "not found ${workspace}"
+  echo "not found"
 else
   echo "found ${workspace}"
 fi
