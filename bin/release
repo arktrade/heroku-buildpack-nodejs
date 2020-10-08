@@ -4,5 +4,5 @@
 cat << EOF
 addons: []
 default_process_types:
-  web: yarn workspace front-atx start
+  web: yarn workspace back_atx start
 EOF
