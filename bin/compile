@@ -20,7 +20,10 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
-echo -e -n "\033[1;36m$workspace";
+workspace = process.env.workspace
+echo -e -n "\033[1;36m";
+echo workspace;
+echo -e -n "\033[0m";
 
 
 ### Load dependencies
