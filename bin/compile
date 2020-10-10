@@ -26,6 +26,8 @@ echo -e -n "\033[1;36m";
 echo "$BUILD_DIR";
 echo "$CACHE_DIR";
 echo "$ENV_DIR";
+echo "HERE";
+echo "$WRK";
 
 
 #if [[ -z "${workspace}" ]]; then
