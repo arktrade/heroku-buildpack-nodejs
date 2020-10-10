@@ -19,7 +19,7 @@ BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
-
+WRK=${4:-}
 
 
 echo -e -n "\033[1;36m";
@@ -28,11 +28,11 @@ echo "$CACHE_DIR";
 echo "$ENV_DIR";
 
 
-if [[ -z "${workspace}" ]]; then
-  echo "not found"
-else
-  echo "found ${workspace}"
-fi
+#if [[ -z "${workspace}" ]]; then
+#  echo "not found"
+#else
+#  echo "found ${workspace}"
+#fi
    
 echo -e -n "\033[0m";
 
