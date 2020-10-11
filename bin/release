@@ -9,6 +9,6 @@ cat << EOF
 
 addons: []
 default_process_types: 
-  web: "${1}"/w
+  web: "${1}/w"
 EOF
 
