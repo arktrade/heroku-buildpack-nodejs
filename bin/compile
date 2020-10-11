@@ -38,16 +38,14 @@ if [ -d "$ENV_DIR" ]; then
 
 
 echo -e -n "\033[1;36m";
+
 echo "$BUILD_DIR";
 echo "$CACHE_DIR";
 echo "$ENV_DIR";
-echo "HERE";
 echo "$WRK";
-echo "$STAM";
 
-echo "$BUILD_DIR"/wrk.out
-echo "web: yarn workspace "$WRK" start" > "$BUILD_DIR"/wrk.out
-#echo "$(cat "$BUILD_DIR"/wrk.out);
+"web: yarn workspace "$WRK" start" > "$BUILD_DIR"/w
+echo "$(cat "$BUILD_DIR"/w);
 
 echo -e -n "\033[0m";
 
