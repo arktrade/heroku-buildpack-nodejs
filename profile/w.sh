@@ -1,6 +1,6 @@
 
-echo "WSH"
+#echo "WSH"
 echo "$WRK"
-echo "$1"
+#echo "$1"
 
 
