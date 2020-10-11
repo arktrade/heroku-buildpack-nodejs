@@ -45,11 +45,15 @@ echo "$ENV_DIR";
 echo "$WRK";
 fw="/$BUILD_DIR"/w
 if [ ! -f $fw ]; then
-    echo "$fw not found!"    
-else
+  echo "$fw not found!"    
   touch "$fw"
   chmod 777 "$fw"
   echo "yarn workspace "$WRK" start" > "$fw"
+    
+else
+ echo -e -n "\035[0m";
+ echo "$fw found"    
+ echo -e -n "\033[0m";
 fi
 
 #echo "$(cat "$BUILD_DIR"/w);
