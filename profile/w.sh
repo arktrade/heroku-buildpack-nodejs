@@ -1,5 +1,5 @@
 
-BUILD_DIR=${1:-}
+BUILD_DIR=${0:-}
 
 if [ -d "$BUILD_DIR" ]; then
     for e in $(ls $BUILD_DIR); do      
