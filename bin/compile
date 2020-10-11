@@ -23,9 +23,8 @@ WRK=${4:-}
 
 if [ -d "$ENV_DIR" ]; then
     for e in $(ls $ENV_DIR); do
-      echo "$e" 
-      export "$e=$(cat $ENV_DIR/$e)"
-      echo "$e"
+      echo "$e" | grep "WRK" 
+      export "$e=$(cat $ENV_DIR/$e)"    
       :
     done
   fi
