@@ -3,12 +3,12 @@
 
 #1>&2 
 #echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
+#cat `${1}/w` 
 
 cat << EOF
 
 addons: []
-default_process_types:
-  #cat `${1}/w` 
+default_process_types: 
   web: yarn workspace back_atx start
 EOF
 
