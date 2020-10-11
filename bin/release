@@ -2,7 +2,7 @@
 # bin/release <build-dir>
 
 1>&2 
-echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
+#echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
 cat << EOF
 
 addons: []
