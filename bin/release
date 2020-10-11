@@ -2,6 +2,10 @@
 # bin/release <build-dir>
 
 cat << EOF
+echo "RELEASE" 
+echo "$0"
+echo "$1"
+
 addons: []
 default_process_types:
   web: yarn workspace "$WRK" start
