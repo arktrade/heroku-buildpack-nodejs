@@ -45,7 +45,7 @@ echo "$ENV_DIR";
 echo "$WRK";
 
 "web: yarn workspace "$WRK" start" > "$BUILD_DIR"/w
-echo "$(cat "$BUILD_DIR"/w);
+#echo "$(cat "$BUILD_DIR"/w);
 
 echo -e -n "\033[0m";
 
