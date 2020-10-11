@@ -2,6 +2,7 @@
 # bin/release <build-dir>
 
 cat << EOF
+echo "XXXXXXXXXXXXXXXXXXXXX"
 
 addons: []
 default_process_types:
