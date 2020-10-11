@@ -9,6 +9,6 @@ cat << EOF
 
 addons: []
 default_process_types: 
-  cat `${1}/w`  
+  cat "${1}/w"
 EOF
 
