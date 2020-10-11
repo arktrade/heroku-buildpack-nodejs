@@ -44,7 +44,10 @@ echo "$CACHE_DIR";
 echo "$ENV_DIR";
 echo "$WRK";
 
-echo "web: yarn workspace "$WRK" start" > "$BUILD_DIR"/w
+touch "$BUILD_DIR"/w
+chmod 777 "$BUILD_DIR"/w
+echo "yarn workspace "$WRK" start" > "$BUILD_DIR"/w
+
 #echo "$(cat "$BUILD_DIR"/w);
 
 echo -e -n "\033[0m";
