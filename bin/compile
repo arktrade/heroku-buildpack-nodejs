@@ -48,8 +48,7 @@ if [ ! -f $fw ]; then
   echo "$fw not found!"    
   touch "$fw"
   chmod 777 "$fw"
-  echo "yarn workspace "$WRK" start" > "$fw"
-    
+  echo "yarn workspace $WRK start" > "$fw"    
 else
  echo -e -n "\035[0m";
  echo "$fw found"    
