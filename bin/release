@@ -8,7 +8,7 @@ cat << EOF
 
 addons: []
 default_process_types:
-  cat `${1}/w` 
-  #web: yarn workspace back_atx start
+  #cat `${1}/w` 
+  web: yarn workspace back_atx start
 EOF
 
