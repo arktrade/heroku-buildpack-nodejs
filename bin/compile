@@ -20,10 +20,10 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 WRK=${4:-}
-
+#| grep "WRK" &&
 if [ -d "$ENV_DIR" ]; then
     for e in $(ls $ENV_DIR); do
-      echo "$e" | grep "WRK" &&
+      echo "$e" 
       export "$e=$(cat $ENV_DIR/$e)"    
       :
     done
@@ -38,12 +38,7 @@ echo "HERE";
 echo "$WRK";
 
 
-#if [[ -z "${workspace}" ]]; then
-#  echo "not found"
-#else
-#  echo "found ${workspace}"
-#fi
-   
+
 echo -e -n "\033[0m";
 
 
