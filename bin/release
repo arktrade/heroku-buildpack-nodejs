@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
-echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
+#echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
 cat << EOF
-
 
 addons: []
 default_process_types:
