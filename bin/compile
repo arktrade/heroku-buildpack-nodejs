@@ -37,8 +37,9 @@ echo "HERE";
 echo "$WRK";
 echo "$STAM";
 
+echo "$BUILD_DIR"/wrk.out
 echo yarn workspace "$WRK" start > "$BUILD_DIR"/wrk.out
-echo cat "$BUILD_DIR"/wrk.out
+echo "$(cat "$BUILD_DIR"/wrk.out);
 
 echo -e -n "\033[0m";
 
