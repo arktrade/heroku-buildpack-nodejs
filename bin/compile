@@ -37,6 +37,10 @@ echo "HERE";
 echo "$WRK";
 echo "$STAM";
 
+ if [ -x $BUILD_DIR/release ]; then
+     echo  yarn workspace "$WRK" start > "$BUILD_DIR"/last_pack_release.out
+ fi
+
 
 
 echo -e -n "\033[0m";
