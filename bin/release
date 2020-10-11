@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
+
+>&2 echo "error"
 #echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
 cat << EOF
 
