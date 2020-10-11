@@ -19,11 +19,10 @@ BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
-WRK=${4:-}
+#WRK=${4:-}
 #| grep "WRK" &&
 if [ -d "$ENV_DIR" ]; then
-    for e in $(ls $ENV_DIR); do
-      echo "$e" 
+    for e in $(ls $ENV_DIR); do      
       export "$e=$(cat $ENV_DIR/$e)"    
       :
     done
@@ -36,6 +35,7 @@ echo "$CACHE_DIR";
 echo "$ENV_DIR";
 echo "HERE";
 echo "$WRK";
+echo "$STAM";
 
 
 
