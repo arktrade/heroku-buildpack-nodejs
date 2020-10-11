@@ -55,8 +55,7 @@ else
  echo -e -n "\033[0m";
 fi
 
-#echo "$(cat "$BUILD_DIR"/w);
-
+echo "$(cat $fw)";
 echo -e -n "\033[0m";
 
 
