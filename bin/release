@@ -5,5 +5,5 @@ cat << EOF
 
 addons: []
 default_process_types:
-  web: yarn workspace "$WRK" start
+  web: yarn workspace back_atx start
 EOF
