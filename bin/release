@@ -2,7 +2,7 @@
 # bin/release <build-dir>
 
 cat << EOF
-echo "XXXXXXXXXXXXXXXXXXXXX"
+#echo "XXXXXXXXXXXXXXXXXXXXX" #This breaks the app. 
 
 addons: []
 default_process_types:
