@@ -2,7 +2,7 @@
 # bin/release <build-dir>
 
 BUILD_DIR=${1:-}
-echo "$BUILD_DIR"
+#echo "$BUILD_DIR"
 
 #echo -e -n "\033[1;36m"
 #echo "RELEASE"
