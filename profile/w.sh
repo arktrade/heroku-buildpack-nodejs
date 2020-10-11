@@ -16,3 +16,5 @@ echo "$BUILD_DIR";
 echo "$WRK";
 echo "$STAM";
 echo -e -n "\033[0m";
+
+export WRK=$WRK
