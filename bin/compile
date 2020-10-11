@@ -43,10 +43,14 @@ echo "$BUILD_DIR";
 echo "$CACHE_DIR";
 echo "$ENV_DIR";
 echo "$WRK";
-
-touch "$BUILD_DIR"/w
-chmod 777 "$BUILD_DIR"/w
-echo "yarn workspace "$WRK" start" > "$BUILD_DIR"/w
+fw="/$BUILD_DIR"/w
+if [ ! -f $fw ]; then
+    echo "$fw not found!"    
+else
+  touch "$fw"
+  chmod 777 "$fw"
+  echo "yarn workspace "$WRK" start" > "$fw"
+fi
 
 #echo "$(cat "$BUILD_DIR"/w);
 
