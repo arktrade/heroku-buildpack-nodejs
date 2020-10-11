@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
+echo -e -n "\033[1;36m";
+echo "RELEASE";
+echo "$WRK";
+echo "$STAM";
+echo -e -n "\033[0m";
 
 cat << EOF
 addons: []
