@@ -23,8 +23,7 @@ BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 echo -e -n "\033[1;32m";
 if [ -d "$BUILD_DIR" ]; then
     for e in $(ls $BUILD_DIR); do   
-      echo "$e"   
-      export "$e=$(cat $BUILD_DIR/$e)"    
+      echo "$e"          
       :
     done
   fi
