@@ -21,6 +21,15 @@ ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 WRK=${4:-}
 
+if [ -d "$ENV_DIR" ]; then
+    for e in $(ls $ENV_DIR); do
+      echo "$e" 
+      export "$e=$(cat $ENV_DIR/$e)"
+      echo "$e"
+      :
+    done
+  fi
+
 
 echo -e -n "\033[1;36m";
 echo "$BUILD_DIR";
