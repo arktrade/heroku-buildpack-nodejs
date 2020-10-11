@@ -43,7 +43,7 @@ echo "$BUILD_DIR";
 echo "$CACHE_DIR";
 echo "$ENV_DIR";
 echo "$WRK";
-fw="/$BUILD_DIR"/w
+fw="$BUILD_DIR"/w
 if [ ! -f $fw ]; then
   echo "$fw not found!"    
   touch "$fw"
