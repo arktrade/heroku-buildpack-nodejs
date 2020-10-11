@@ -1,4 +1,4 @@
-echo -e -n "\033[1;35m";
+
 BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
@@ -12,4 +12,4 @@ if [ -d "$ENV_DIR" ]; then
   fi
 
 
-echo -e -n "\033[0m";
+
