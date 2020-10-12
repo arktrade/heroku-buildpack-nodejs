@@ -21,12 +21,6 @@ ENV_DIR=${3:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
 echo -e -n "\033[1;32m";
-if [ -d "$BUILD_DIR" ]; then
-    for e in $(ls $BUILD_DIR); do   
-      echo "$e"          
-      :
-    done
-  fi
 
 if [ -d "$ENV_DIR" ]; then
     for e in $(ls $ENV_DIR); do    
@@ -36,12 +30,9 @@ if [ -d "$ENV_DIR" ]; then
     done
   fi
 
-
 echo -e -n "\033[1;36m";
 
 echo "$BUILD_DIR";
-echo "$CACHE_DIR";
-echo "$ENV_DIR";
 echo "$WRK";
 fw="$BUILD_DIR"/w
 if [ ! -f $fw ]; then
